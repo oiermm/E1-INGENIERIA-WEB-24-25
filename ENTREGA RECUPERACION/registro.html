@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="static/css/estilos.css">
+</head>
+
+<body>
+  <header class="cabeza">
+        <div>
+            <h1 class="titulo-cabecera">FIX FLOW</h1>
+        </div>
+        <div class="frase">
+            <p>Automatiza, localiza y resuelve fallos técnicos con eficiencia.</p>
+        </div>
+        <div class="botones-cabecera">
+            <a href="inicio.html"><button class="boton-grande">INICIO</button></a>
+            <a href="registro.html"><button class="boton-grande">REGISTRAR INCIDENCIA</button></a>
+            <a href="sobre_nosotros.html"><button class="boton-grande">SOBRE NOSOTROS</button></a>
+        </div>
+    </header>
+
+    <footer class="pie-pagina">
+        <form class="formulario-recomendaciones">
+            <h2 class="titulo-seccion">Recomendaciones de mejora</h2>
+
+            <div class="fila-formulario">
+                <label class="grupo-campo">Nombre:
+                    <input class="campo-nombre" type="text" name="nombre" required>
+                </label>
+
+                <label class="grupo-campo">Email:
+                    <input class="campo-email" type="email" name="email" required>
+                </label>
+
+                <label class="grupo-campo">Fecha:
+                    <input class="campo-fecha" type="date" name="fecha" required>
+                </label>
+
+                <label class="grupo-campo">Sexo:
+                    <select class="campo-sexo" name="sexo" required>
+                        <option value="">Seleccionar</option>
+                        <option value="hombre">Hombre</option>
+                        <option value="mujer">Mujer</option>
+                        <option value="no-decir">Prefiero no decirlo</option>
+                    </select>
+                </label>
+            </div>
+
+            <div class="campo-comentario">
+                <label class="grupo-campo">Comentario:
+                    <textarea class="campo-texto" name="comentario" required></textarea>
+                </label>
+            </div>
+
+            <div class="contenedor-boton">
+                <button class="boton-enviar" type="submit">Enviar recomendación</button>
+            </div>
+        </form>
+    </footer>
+
+</body>
+
+</html>
