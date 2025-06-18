@@ -9,15 +9,16 @@
 
     <header class="cabeza">
         <h1 class="titulo-cabecera">FIX FLOW</h1>
-        <img src="img/logo.png" alt="Logo Fix Flow" class="logo-cabecera">
+        <img src="img/logo.png" alt="Logotipo de la empresa">
         <div class="frase">
             <p>Automatiza, localiza y resuelve fallos técnicos con eficiencia.</p>
         </div>
-        <div class="botones-cabecera">
-            <a href="inicio.html"><button class="boton-grande">INICIO</button></a>
+
+        <nav class="botones-cabecera" aria-label="Navegación principal">
+            <a href="index.html"><button class="boton-grande">INICIO</button></a>
             <a href="registro.html"><button class="boton-grande">REGISTRAR INCIDENCIA</button></a>
             <a href="sobre_nosotros.html"><button class="boton-grande">SOBRE NOSOTROS</button></a>
-        </div>
+        </nav>
     </header>
 
     <main>
@@ -55,7 +56,6 @@
                 </div>
 
                 <div class="fila-formulario">
-
                     <div class="grupo-campo">
                         <label for="area"><strong>Área:</strong></label>
                         <input class="campo-area" type="text" id="area" name="area" required>
@@ -77,12 +77,19 @@
                         <textarea class="campo-texto" id="descripcion" name="descripcion" required></textarea>
                     </div>
                 </div>
+                </br>
+
+                <div class="grupo-campo">
+                    <label><input type="checkbox" id="urgente" name="urgente"> <strong>Requiere intervención
+                            urgente</strong></label>
+                </div>
 
                 <div class="contenedor-boton">
                     <button class="boton-enviar" type="submit">Guardar incidencia</button>
                 </div>
 
             </form>
+
         </section>
 
         <section class="seccion-registros">
