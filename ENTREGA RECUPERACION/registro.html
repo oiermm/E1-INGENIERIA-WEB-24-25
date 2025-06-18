@@ -6,10 +6,10 @@
 
 <body>
 
+
     <header class="cabeza">
-        <div>
-            <h1 class="titulo-cabecera">FIX FLOW</h1>
-        </div>
+        <h1 class="titulo-cabecera">FIX FLOW</h1>
+        <img src="img/logo.png" alt="Logo Fix Flow" class="logo-cabecera">
         <div class="frase">
             <p>Automatiza, localiza y resuelve fallos técnicos con eficiencia.</p>
         </div>
@@ -20,142 +20,146 @@
         </div>
     </header>
 
-    <section class="seccion-formulario">
-        <h2 class="titulo-seccion">Registrar nueva incidencia</h2>
+    <main>
 
-        <form class="formulario-incidencia">
+        <section class="seccion-formulario">
+            <h2 class="titulo-seccion">Registrar nueva incidencia</h2>
 
-            <div class="fila-formulario">
-                <div class="grupo-campo">
-                    <label for="titulo"><strong>Título:</strong></label>
-                    <input class="campo-titulo" type="text" id="titulo" name="titulo" required>
-                </div>
+            <form class="formulario-incidencia">
 
-                <div class="grupo-campo">
-                    <label for="fecha"><strong>Fecha:</strong></label>
-                    <input class="campo-fecha" type="date" id="fecha" name="fecha" required>
-                </div>
+                <div class="fila-formulario">
+                    <div class="grupo-campo">
+                        <label for="titulo"><strong>Título:</strong></label>
+                        <input class="campo-titulo" type="text" id="titulo" name="titulo" required>
+                    </div>
 
-                <div class="grupo-campo">
-                    <label for="email"><strong>Email:</strong></label>
-                    <input class="campo-email" type="email" id="email" name="email" required>
-                </div>
+                    <div class="grupo-campo">
+                        <label for="fecha"><strong>Fecha:</strong></label>
+                        <input class="campo-fecha" type="date" id="fecha" name="fecha" required>
+                    </div>
 
-                <div class="grupo-campo">
-                    <label for="prioridad"><strong>Prioridad:</strong></label>
-                    <select class="campo-prioridad" id="prioridad" name="prioridad" required>
-                        <option value="">Seleccionar</option>
-                        <option value="alta">Alta</option>
-                        <option value="media">Media</option>
-                        <option value="baja">Baja</option>
-                    </select>
-                </div>
-            </div>
+                    <div class="grupo-campo">
+                        <label for="email"><strong>Email:</strong></label>
+                        <input class="campo-email" type="email" id="email" name="email" required>
+                    </div>
 
-            <div class="fila-formulario">
-
-                <div class="grupo-campo">
-                    <label for="area"><strong>Área:</strong></label>
-                    <input class="campo-area" type="text" id="area" name="area" required>
-                </div>
-
-                <div class="grupo-campo">
-                    <label><strong>Tipo de incidencia:</strong></label>
-                    <div class="grupo-radio">
-                        <label><input type="radio" name="tipo" value="eléctrica" required> Eléctrica</label>
-                        <label><input type="radio" name="tipo" value="mecánica"> Mecánica</label>
-                        <label><input type="radio" name="tipo" value="software"> Software</label>
+                    <div class="grupo-campo">
+                        <label for="prioridad"><strong>Prioridad:</strong></label>
+                        <select class="campo-prioridad" id="prioridad" name="prioridad" required>
+                            <option value="">Seleccionar</option>
+                            <option value="alta">Alta</option>
+                            <option value="media">Media</option>
+                            <option value="baja">Baja</option>
+                        </select>
                     </div>
                 </div>
-            </div>
 
-            <div class="campo-descripcion">
-                <div class="grupo-campo">
-                    <label for="descripcion"><strong>Descripción:</strong></label>
-                    <textarea class="campo-texto" id="descripcion" name="descripcion" required></textarea>
+                <div class="fila-formulario">
+
+                    <div class="grupo-campo">
+                        <label for="area"><strong>Área:</strong></label>
+                        <input class="campo-area" type="text" id="area" name="area" required>
+                    </div>
+
+                    <div class="grupo-campo">
+                        <label><strong>Tipo de incidencia:</strong></label>
+                        <div class="grupo-radio">
+                            <label><input type="radio" name="tipo" value="eléctrica" required> Eléctrica</label>
+                            <label><input type="radio" name="tipo" value="mecánica"> Mecánica</label>
+                            <label><input type="radio" name="tipo" value="software"> Software</label>
+                        </div>
+                    </div>
                 </div>
+
+                <div class="campo-descripcion">
+                    <div class="grupo-campo">
+                        <label for="descripcion"><strong>Descripción:</strong></label>
+                        <textarea class="campo-texto" id="descripcion" name="descripcion" required></textarea>
+                    </div>
+                </div>
+
+                <div class="contenedor-boton">
+                    <button class="boton-enviar" type="submit">Guardar incidencia</button>
+                </div>
+
+            </form>
+        </section>
+
+        <section class="seccion-registros">
+            <h2 class="titulo-seccion">Incidencias registradas</h2>
+            <div class="tabla-centro">
+                <table class="tabla-horaria">
+                    <tr>
+                        <th>ID</th>
+                        <th>Fecha</th>
+                        <th>Título</th>
+                        <th>Detalles</th>
+                    </tr>
+                    <tr>
+                        <td>001</td>
+                        <td>2025-06-01</td>
+                        <td>Fallo en sensor A1</td>
+                        <td><a href="detalle.html">Ver detalles</a></td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>2025-06-02</td>
+                        <td>Error conexión PLC</td>
+                        <td><a href="detalle.html">Ver detalles</a></td>
+                    </tr>
+                    <tr>
+                        <td>003</td>
+                        <td>2025-06-03</td>
+                        <td>Revisión línea B</td>
+                        <td><a href="detalle.html">Ver detalles</a></td>
+                    </tr>
+                    <tr>
+                        <td>004</td>
+                        <td>2025-06-04</td>
+                        <td>Avería motor X</td>
+                        <td><a href="detalle.html">Ver detalles</a></td>
+                    </tr>
+                    <tr>
+                        <td>005</td>
+                        <td>2025-06-05</td>
+                        <td>Problema HMI</td>
+                        <td><a href="detalle.html">Ver detalles</a></td>
+                    </tr>
+                    <tr>
+                        <td>006</td>
+                        <td>2025-06-06</td>
+                        <td>Fallo red local</td>
+                        <td><a href="detalle.html">Ver detalles</a></td>
+                    </tr>
+                    <tr>
+                        <td>007</td>
+                        <td>2025-06-07</td>
+                        <td>Actualización firmware</td>
+                        <td><a href="detalle.html">Ver detalles</a></td>
+                    </tr>
+                    <tr>
+                        <td>008</td>
+                        <td>2025-06-08</td>
+                        <td>Controlador defectuoso</td>
+                        <td><a href="detalle.html">Ver detalles</a></td>
+                    </tr>
+                    <tr>
+                        <td>009</td>
+                        <td>2025-06-09</td>
+                        <td>Consumo excesivo línea 2</td>
+                        <td><a href="detalle.html">Ver detalles</a></td>
+                    </tr>
+                    <tr>
+                        <td>010</td>
+                        <td>2025-06-10</td>
+                        <td>Desfase sensores</td>
+                        <td><a href="detalle.html">Ver detalles</a></td>
+                    </tr>
+                </table>
             </div>
+        </section>
 
-            <div class="contenedor-boton">
-                <button class="boton-enviar" type="submit">Guardar incidencia</button>
-            </div>
-
-        </form>
-    </section>
-
-    <section class="seccion-registros">
-        <h2 class="titulo-seccion">Incidencias registradas</h2>
-        <div class="tabla-centro">
-            <table class="tabla-horaria">
-                <tr>
-                    <th>ID</th>
-                    <th>Fecha</th>
-                    <th>Título</th>
-                    <th>Detalles</th>
-                </tr>
-                <tr>
-                    <td>001</td>
-                    <td>2025-06-01</td>
-                    <td>Fallo en sensor A1</td>
-                    <td><a href="detalle.html">Ver detalles</a></td>
-                </tr>
-                <tr>
-                    <td>002</td>
-                    <td>2025-06-02</td>
-                    <td>Error conexión PLC</td>
-                    <td><a href="detalle.html">Ver detalles</a></td>
-                </tr>
-                <tr>
-                    <td>003</td>
-                    <td>2025-06-03</td>
-                    <td>Revisión línea B</td>
-                    <td><a href="detalle.html">Ver detalles</a></td>
-                </tr>
-                <tr>
-                    <td>004</td>
-                    <td>2025-06-04</td>
-                    <td>Avería motor X</td>
-                    <td><a href="detalle.html">Ver detalles</a></td>
-                </tr>
-                <tr>
-                    <td>005</td>
-                    <td>2025-06-05</td>
-                    <td>Problema HMI</td>
-                    <td><a href="detalle.html">Ver detalles</a></td>
-                </tr>
-                <tr>
-                    <td>006</td>
-                    <td>2025-06-06</td>
-                    <td>Fallo red local</td>
-                    <td><a href="detalle.html">Ver detalles</a></td>
-                </tr>
-                <tr>
-                    <td>007</td>
-                    <td>2025-06-07</td>
-                    <td>Actualización firmware</td>
-                    <td><a href="detalle.html">Ver detalles</a></td>
-                </tr>
-                <tr>
-                    <td>008</td>
-                    <td>2025-06-08</td>
-                    <td>Controlador defectuoso</td>
-                    <td><a href="detalle.html">Ver detalles</a></td>
-                </tr>
-                <tr>
-                    <td>009</td>
-                    <td>2025-06-09</td>
-                    <td>Consumo excesivo línea 2</td>
-                    <td><a href="detalle.html">Ver detalles</a></td>
-                </tr>
-                <tr>
-                    <td>010</td>
-                    <td>2025-06-10</td>
-                    <td>Desfase sensores</td>
-                    <td><a href="detalle.html">Ver detalles</a></td>
-                </tr>
-            </table>
-        </div>
-    </section>
+    </main>
 
     <footer class="pie-pagina">
         <form class="formulario-recomendaciones">

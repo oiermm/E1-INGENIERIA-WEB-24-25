@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 230px;
+    height: 330px;
 }
 
 .frase {
@@ -328,3 +328,29 @@ section {
     text-decoration: none;
     font-weight: bold;
 }
+
+
+.boton-grande:hover {
+  background-color: rgb(235, 235, 235);
+}
+
+.boton-enviar:focus {
+  outline: 2px dashed #0056b3;
+  outline-offset: 2px;
+}
+
+.logo-cabecera {
+  height: 100px;
+  width: auto;
+  margin-right: 20px;
+  align-self: center;
+}
+
+.imagen-nosotros
+{
+    height: 150px;
+    width: auto;
+    margin-right: 20px;
+    align-self: center;
+}
+
