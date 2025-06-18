@@ -56,6 +56,7 @@ section {
     margin-bottom: 10px;
     font-weight: bold;
     color: black;
+    text-transform: uppercase;
 }
 
 .fila-formulario {
@@ -109,6 +110,7 @@ section {
     border-radius: 5px;
     width: 200px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .seccion-horario {
@@ -141,7 +143,7 @@ section {
 .tabla-horaria th,
 .tabla-horaria td {
     padding: 10px;
-    border: 1px solid #000000;
+    border: 1px solid #444;
 }
 
 .cerrado {
@@ -200,6 +202,7 @@ section {
     margin-top: 15px;
     line-height: 1.6;
     color: #333;
+    text-align: justify;
 }
 
 .formulario-incidencia {
@@ -329,28 +332,25 @@ section {
     font-weight: bold;
 }
 
-
 .boton-grande:hover {
-  background-color: rgb(235, 235, 235);
+    background-color: rgb(235, 235, 235);
 }
 
 .boton-enviar:focus {
-  outline: 2px dashed #0056b3;
-  outline-offset: 2px;
+    outline: 2px dashed #0056b3;
+    outline-offset: 2px;
 }
 
 .logo-cabecera {
-  height: 100px;
-  width: auto;
-  margin-right: 20px;
-  align-self: center;
-}
-
-.imagen-nosotros
-{
-    height: 150px;
+    height: 100px;
     width: auto;
     margin-right: 20px;
     align-self: center;
 }
 
+.imagen-nosotros {
+    height: 150px;
+    width: auto;
+    margin-right: 20px;
+    align-self: center;
+}
